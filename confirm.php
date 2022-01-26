@@ -7,9 +7,9 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="icon" href="img/favicon.png"/>
-        <title>Coffee House | Home</title>
+        <title>Coffee house | Message sent</title>
     </head>
-    <body class="minh-100vh bg-secondary">
+    <body class="minh-100vh">
         <header class="position-absolute w-100">
             <nav class="navbar navbar-dark navbar-expand-md bg-transparent">
                 <a href="index.html" class="navbar-brand ms-3">
@@ -41,26 +41,62 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="index-s1 container-fluid d-flex minh-100vh align-items-center py-5">
-                <div class="row mx-0 w-100 mt-5 mt-md-0">
-                    <div class="col-12 col-sm-6 offset-sm-6 offset-md-5 minh-50vh d-flex align-items-center">
-                        <div class="w-100 text-center text-sm-start text-shadow"> 
-                            <h2 class="display-6 text-white text-uppercase fw-bold">
-                                Coffee time
-                            </h2>
-                            <p class="lead text-white">
-                                Our cafe is located in the quite Midtown neighborhood. We feature a cozy, 
-                                bright, and friendly space for individuals enjoy excellent coffee and food, 
-                                get work done, and socialize. We are a family-owned cafe with a diverse and 
-                                friendly staff.
-                            </p>
-                            <a href="offer.html" class="btn btn-outline-light rounded-pill">See more</a>
-                        </div>
+        <section class="login-s1 container-fluid d-flex align-items-center bg-secondary py-5 minh-100vh">
+            <div class="my-auto w-100">
+                <div class="row mx-0 w-100 pt-5 mt-5">
+                    <div class="col-xs-12 col-sm-8 col-md-6 offset-sm-2 offset-md-3 text-center">
+                        <h3 class="text-center font-header text-white text-shadow mb-3">Message sent!</h3>
+                        <table class="table table-hover border text-start font-menu bg-light opacity-8">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" class="font-header">Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Full name</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fname']))
+                                            echo htmlspecialchars($_POST['fname']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fphone']))
+                                            echo htmlspecialchars($_POST['fphone']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmail']))
+                                            echo htmlspecialchars($_POST['fmail']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Message</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmsg']))
+                                            echo htmlspecialchars($_POST['fmsg']);
+                                        ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="contact.html" 
+                            class="btn btn-secondary font-header mt-3">OK</a>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
         <footer class="container-fluid d-flex text-dark align-items-center bg-dark text-white pt-3 opacity-9 border-top">
             <div class="row mx-0 w-100 small opacity-9">
                 <div class="col-12 col-md-6 col-lg-5 text-center text-md-start">
