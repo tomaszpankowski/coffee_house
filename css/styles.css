@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster-Regular.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -571,45 +575,51 @@ body, html {
 }
 
 /* line 18, ../sass/partials/_modules.scss */
-textarea {
-  resize: none;
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "Lobster";
+  letter-spacing: 1px;
 }
 
-/* line 22, ../sass/partials/_modules.scss */
+/* line 23, ../sass/partials/_modules.scss */
 header {
   z-index: 100;
 }
 
+/* line 27, ../sass/partials/_modules.scss */
+textarea {
+  resize: none;
+}
+
 @media all and (max-width: 676px) {
-  /* line 28, ../sass/partials/_modules.scss */
+  /* line 33, ../sass/partials/_modules.scss */
   .about-s2 {
     background-position: center !important;
   }
 
-  /* line 33, ../sass/partials/_modules.scss */
+  /* line 38, ../sass/partials/_modules.scss */
   .contact-s1, .contact-s2, .contact-s3 {
     background-color: #aaa !important;
     background-blend-mode: multiply;
   }
-  /* line 37, ../sass/partials/_modules.scss */
+  /* line 42, ../sass/partials/_modules.scss */
   .contact-s1 {
     background-position: center !important;
   }
 
-  /* line 42, ../sass/partials/_modules.scss */
+  /* line 47, ../sass/partials/_modules.scss */
   .index-s1, .index-s2, .about-s1, .about-s2 {
     background-color: #aaa !important;
     background-blend-mode: multiply;
   }
 
-  /* line 48, ../sass/partials/_modules.scss */
+  /* line 53, ../sass/partials/_modules.scss */
   .offer-s1 {
     background-color: #aaa !important;
     background-blend-mode: multiply;
     background-position: right !important;
   }
 
-  /* line 55, ../sass/partials/_modules.scss */
+  /* line 60, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #333;
     border: 1px solid #666;
